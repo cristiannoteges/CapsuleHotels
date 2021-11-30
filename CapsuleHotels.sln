@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Dtos", "Capsu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Migrations", "CapsuleHotels.Migrations\CapsuleHotels.Migrations.csproj", "{D7C397DB-B8F9-41B2-9AB2-E8AB07AFF8B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Services", "CapsuleHotels.Services\CapsuleHotels.Services.csproj", "{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D7C397DB-B8F9-41B2-9AB2-E8AB07AFF8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7C397DB-B8F9-41B2-9AB2-E8AB07AFF8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7C397DB-B8F9-41B2-9AB2-E8AB07AFF8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
