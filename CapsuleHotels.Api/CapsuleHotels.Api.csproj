@@ -21,6 +21,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CapsuleHotels.Data\CapsuleHotels.Data.csproj" />
+    <ProjectReference Include="..\CapsuleHotels.Dtos\CapsuleHotels.Dtos.csproj" />
+    <ProjectReference Include="..\CapsuleHotels.Migrations\CapsuleHotels.Migrations.csproj" />
     <ProjectReference Include="..\CapsuleHotels.Services\CapsuleHotels.Services.csproj" />
   </ItemGroup>
 

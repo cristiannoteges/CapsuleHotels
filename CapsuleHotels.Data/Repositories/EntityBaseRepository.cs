@@ -25,7 +25,7 @@ namespace CapsuleHotels.Data.Repositories
                 .CountAsync();
         }
 
-        public virtual async Task<bool> ExistsAsync(Guid id)
+        public virtual async Task<bool> ExistsAsync(int id)
         {
             return await _context.Set<T>()
                 .AnyAsync(x => x.Id == id);
@@ -56,7 +56,7 @@ namespace CapsuleHotels.Data.Repositories
                 .ToListAsync();
         }
 
-        public virtual async Task<T> GetSingleAsync(Guid id)
+        public virtual async Task<T> GetSingleAsync(int id)
         {
             return await _context.Set<T>()
                 .FirstOrDefaultAsync(x => x.Id == id);
@@ -82,7 +82,7 @@ namespace CapsuleHotels.Data.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public virtual async Task<IEnumerable<T>> GetCollectionAsync(IEnumerable<Guid> ids)
+        public virtual async Task<IEnumerable<T>> GetCollectionAsync(IEnumerable<int> ids)
         {
             return await _context.Set<T>()
                 .Where(x => ids.Contains(x.Id))

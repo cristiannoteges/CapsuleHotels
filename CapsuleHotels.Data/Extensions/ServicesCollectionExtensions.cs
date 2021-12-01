@@ -9,7 +9,10 @@ namespace CapsuleHotels.Data.Extensions
         public static IServiceCollection AddDataServices(this IServiceCollection serviceCollection)
         {
             return serviceCollection
-                .AddScoped<IUsuarioRepository, UsuarioRepository>();
+                .AddScoped<IHotelRepository, HotelRepository>()
+                .AddScoped<IUsuarioRepository, UsuarioRepository>()
+                .AddScoped<IHabitacionRepository, HabitacionRepository>()
+                .AddScoped<IReservaRepository, ReservaRepository>(); 
         }
     }
 }

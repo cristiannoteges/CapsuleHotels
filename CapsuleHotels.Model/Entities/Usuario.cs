@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CapsuleHotels.Model.Entities
 {
-    public class Usuario : DeletionAuditedEntity
+    public class Usuario : Entity
     {
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
