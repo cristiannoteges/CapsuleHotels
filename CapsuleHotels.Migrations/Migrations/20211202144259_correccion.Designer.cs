@@ -4,14 +4,16 @@ using CapsuleHotels.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CapsuleHotels.Migrations.Migrations
 {
     [DbContext(typeof(CapsuleHotelsContext))]
-    partial class CapsuleHotelsContextModelSnapshot : ModelSnapshot
+    [Migration("20211202144259_correccion")]
+    partial class correccion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -173,7 +175,7 @@ namespace CapsuleHotels.Migrations.Migrations
                     b.HasOne("CapsuleHotels.Model.Entities.Hotel", "Hotel")
                         .WithMany()
                         .HasForeignKey("HotelId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("CapsuleHotels.Model.Entities.Usuario", "Usuario")

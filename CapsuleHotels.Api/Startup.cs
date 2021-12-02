@@ -54,7 +54,7 @@ namespace CapsuleHotels.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Noteges.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CapsuleHotels.Api v1"));
             }
 
             app.UseCors(builder => builder.AllowAnyOrigin()

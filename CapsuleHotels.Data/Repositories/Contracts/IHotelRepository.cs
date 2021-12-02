@@ -2,7 +2,7 @@
 
 namespace CapsuleHotels.Data.Repositories.Contracts
 {
-    interface IHotelRepository:IEntityBaseRepository<Hotel>
+    public interface IHotelRepository:IEntityBaseRepository<Hotel>
     {
     }
 }

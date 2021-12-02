@@ -2,8 +2,8 @@
 
 namespace CapsuleHotels.Services.Business.Contracts
 {
-    public interface IUsuarioService
+    public interface IHotelService
     {
-        Task<bool> ExisteUsuario(int id);
+        Task<bool> ExisteHotel(int id);
     }
 }

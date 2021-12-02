@@ -4,14 +4,16 @@ using CapsuleHotels.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CapsuleHotels.Migrations.Migrations
 {
     [DbContext(typeof(CapsuleHotelsContext))]
-    partial class CapsuleHotelsContextModelSnapshot : ModelSnapshot
+    [Migration("20211202072814_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,7 +31,7 @@ namespace CapsuleHotels.Migrations.Migrations
                     b.Property<int>("HotelId")
                         .HasColumnType("int");
 
-                    b.Property<int>("NumeroHabitacion")
+                    b.Property<int>("NumeroHbitacion")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

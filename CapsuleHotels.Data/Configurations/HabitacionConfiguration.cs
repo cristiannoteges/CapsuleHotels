@@ -15,7 +15,7 @@ namespace CapsuleHotels.Data.Configurations
         {
             builder.ToTable("Habtacion");
 
-            builder.Property(p => p.NumeroHbitacion)
+            builder.Property(p => p.NumeroHabitacion)
                 .IsRequired();
 
             builder.Property(p => p.HotelId)

@@ -12,7 +12,10 @@ namespace CapsuleHotels.Services.Extensions
                 //AutoMapper
                 .AddAutoMapper(typeof(ServicesCollectionExtensions).Assembly)
                 //Business
-                .AddScoped<IUsuarioService, UsuarioService>();
+                .AddScoped<IUsuarioService, UsuarioService>()
+                .AddScoped<IHotelService, HotelService>()
+                .AddScoped<IHabitacionService, HabitacionService>()
+                .AddScoped<IReservaService, ReservaService>();
         }
     }
 }
