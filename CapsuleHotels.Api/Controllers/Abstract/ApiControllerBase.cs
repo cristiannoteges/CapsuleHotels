@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ namespace CapsuleHotels.Api.Controllers.Abstract
 {
     public class ApiControllerBase:ControllerBase
     {
-        //Para añadir paginación
+        //Controlador base en el que podremos añadir elementos a nuestros controladores como por ejemplo una paginación para los resultados.
+        
     }
 }

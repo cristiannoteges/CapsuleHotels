@@ -30,6 +30,7 @@ namespace CapsuleHotels.Api
         {
             services.AddControllers();
 
+            //Añadimos la coneecion a la BBDD y el proyecto de migrations donde estaran las mismas ya que las tablas colecciones estan hechas como Code First
             services.AddDbContext<CapsuleHotelsContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("CapsuleHotelsConnection"),
                 b => b.MigrationsAssembly("CapsuleHotels.Migrations")));

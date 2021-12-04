@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Api", "CapsuleHotels.Api\CapsuleHotels.Api.csproj", "{6A960A16-BCCB-4930-AFD4-F1157DB23208}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapsuleHotels.Api", "CapsuleHotels.Api\CapsuleHotels.Api.csproj", "{6A960A16-BCCB-4930-AFD4-F1157DB23208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Model", "CapsuleHotels.Model\CapsuleHotels.Model.csproj", "{972E2961-7F54-4EB0-819B-AFE2F0AC9ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapsuleHotels.Model", "CapsuleHotels.Model\CapsuleHotels.Model.csproj", "{972E2961-7F54-4EB0-819B-AFE2F0AC9ED6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Data", "CapsuleHotels.Data\CapsuleHotels.Data.csproj", "{909D6390-4ED0-4EBD-9989-614768DCA7DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapsuleHotels.Data", "CapsuleHotels.Data\CapsuleHotels.Data.csproj", "{909D6390-4ED0-4EBD-9989-614768DCA7DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Dtos", "CapsuleHotels.Dtos\CapsuleHotels.Dtos.csproj", "{8D1CDF49-A156-414F-9D7E-FA5E2E9AEC98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapsuleHotels.Dtos", "CapsuleHotels.Dtos\CapsuleHotels.Dtos.csproj", "{8D1CDF49-A156-414F-9D7E-FA5E2E9AEC98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Migrations", "CapsuleHotels.Migrations\CapsuleHotels.Migrations.csproj", "{D7C397DB-B8F9-41B2-9AB2-E8AB07AFF8B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapsuleHotels.Migrations", "CapsuleHotels.Migrations\CapsuleHotels.Migrations.csproj", "{D7C397DB-B8F9-41B2-9AB2-E8AB07AFF8B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Services", "CapsuleHotels.Services\CapsuleHotels.Services.csproj", "{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapsuleHotels.Services", "CapsuleHotels.Services\CapsuleHotels.Services.csproj", "{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapsuleHotels.Test", "CapsuleHotels.Test\CapsuleHotels.Test.csproj", "{DC378A2B-944A-4EC7-B965-82DEC6CEE743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A49C24-E200-4FD9-AAE9-923C2C0D0EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC378A2B-944A-4EC7-B965-82DEC6CEE743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC378A2B-944A-4EC7-B965-82DEC6CEE743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC378A2B-944A-4EC7-B965-82DEC6CEE743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC378A2B-944A-4EC7-B965-82DEC6CEE743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

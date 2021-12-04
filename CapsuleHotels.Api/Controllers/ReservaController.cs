@@ -4,6 +4,7 @@ using CapsuleHotels.Dtos.ResourceParameters;
 using CapsuleHotels.Services.Business.Contracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,12 @@ namespace CapsuleHotels.Api.Controllers
     public class ReservaController : ApiControllerBase
     {
         private readonly IReservaService _reservaService;
+        private readonly ILogger<ReservaController> _logger;
 
-        public ReservaController(IReservaService reservaService)
+        public ReservaController(IReservaService reservaService, ILogger<ReservaController> logger)
         {
             _reservaService = reservaService ?? throw new ArgumentNullException(nameof(reservaService));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         //Get: api/Reserva/{id}
@@ -28,6 +31,7 @@ namespace CapsuleHotels.Api.Controllers
         {
             if (id == 0)
             {
+                _logger.LogError("Datosde entrada invalidos");
                 return BadRequest();
             }
 
@@ -66,6 +70,7 @@ namespace CapsuleHotels.Api.Controllers
         {
             if (reservaForCreationDto == null)
             {
+                _logger.LogError("Parametros no validos");
                 return BadRequest();
             }
 

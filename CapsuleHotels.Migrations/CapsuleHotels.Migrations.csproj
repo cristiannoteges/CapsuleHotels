@@ -12,4 +12,8 @@
     <ProjectReference Include="..\CapsuleHotels.Data\CapsuleHotels.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>
